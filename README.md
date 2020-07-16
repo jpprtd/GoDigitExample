@@ -1,6 +1,8 @@
 # GoDigitExample
  2020-07-15
 
+For example please visit -> http://rtd.monster/godigit
+
     How to use this.
     [URL]/apis.php?action=[0]
     [0] = insert, update and delete. Choose this one.
