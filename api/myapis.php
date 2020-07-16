@@ -1,3 +1,32 @@
+<!--
+    How to use this.
+    [URL]/apis.php?action=[0]
+    [0] = insert, update and delete. Choose this one.
+
+    **GET CUSTOMER INFORMATION**
+    [URL]/apis.php?action=get&cus=[1]
+        [1] = all, or customer_id
+        ex. [URL]/apis.php?action=get&cus=1
+        ex. [URL]/apis.php?action=get&cus=all
+
+    **INSERT CUSTOMER INFORMATION**
+    [URL]/apis.php?action=insert
+        *Require post key all of [1].
+        [1] = 'fn', 'ln', 'tl' 
+    
+    **UPDATE CUSTOMER INFORMATION**
+    [URL]/apis.php?action=update
+        *Require post key all of [1].
+        [1] = 'fn', 'ln', 'tl', 'id'
+
+    **DELETE CUSTOMER INFORMATION**
+    [URL]/apis.php?action=delete
+        *Require post key all of [1].
+        [1] = 'id'
+        *Remark -> this functoin is remove real data,
+        because proposition not tell about flag field for hide row of data.
+-->
+
 <?php use myDatabaseUtils\myDatabaseUtils; ?>
 <?php include_once '../vendor/autoload.php';?>
 <?php error_reporting(0); ?>
@@ -6,9 +35,9 @@
     $db = new myDatabaseUtils();
     $db->DbType('mysql')
             ->HostName('localhost')
-            ->DbName('godigitexample')
-            ->Username('root')
-            ->Password('');
+            ->DbName('supergam_godigit')
+            ->Username('supergam_godigit')
+            ->Password('supergam_godigit');
     $db->TableName('tb_customer');
     $db->connect();
     if(isset($_GET['action'])){
@@ -50,7 +79,7 @@
         return preg_match('/[ก-๙a-zA-Z]+$/',$n);
     }
     function chktele($n){
-        return preg_match('/^[0{1}689{1}0-9{8}]+$/',$n);
+        return preg_match('/^([0{1}])+([689]{1})+([0-9]{8})+$/',$n);
     }
     function query_customer($mode, $db, $fn = null, $ln = null, $tl = null, $id = null){
         if($mode == 'delete' && chknum($id)){
