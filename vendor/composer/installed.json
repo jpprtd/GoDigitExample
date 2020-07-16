@@ -1,0 +1,37 @@
+[
+    {
+        "name": "jpprt/myfunc",
+        "version": "0.1.2",
+        "version_normalized": "0.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jpprtd/myfunc.git",
+            "reference": "c02f8ddf740ec392b03a4e5399695a7f41bcd1f3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jpprtd/myfunc/zipball/c02f8ddf740ec392b03a4e5399695a7f41bcd1f3",
+            "reference": "c02f8ddf740ec392b03a4e5399695a7f41bcd1f3",
+            "shasum": ""
+        },
+        "time": "2020-07-16T19:11:44+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "myDatabaseUtils\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "VORAPH",
+                "email": "jpprtd@gmail.com"
+            }
+        ],
+        "description": "This library for my utility functions."
+    }
+]

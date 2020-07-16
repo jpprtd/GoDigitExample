@@ -1,0 +1,52 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "4688db9fac2d4714d69825a95ec17b69",
+    "packages": [
+        {
+            "name": "jpprt/myfunc",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jpprtd/myfunc.git",
+                "reference": "c02f8ddf740ec392b03a4e5399695a7f41bcd1f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jpprtd/myfunc/zipball/c02f8ddf740ec392b03a4e5399695a7f41bcd1f3",
+                "reference": "c02f8ddf740ec392b03a4e5399695a7f41bcd1f3",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "myDatabaseUtils\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "VORAPH",
+                    "email": "jpprtd@gmail.com"
+                }
+            ],
+            "description": "This library for my utility functions.",
+            "time": "2020-07-16T19:11:44+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}

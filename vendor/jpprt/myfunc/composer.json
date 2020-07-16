@@ -1,0 +1,18 @@
+{
+    "name": "jpprt/myDatabaseUtils",
+    "description": "This library for my utility functions.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "VORAPH",
+            "email": "jpprtd@gmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4": {
+            "myDatabaseUtils\\" : "src/"
+        }
+    },
+    "require": {}
+}
