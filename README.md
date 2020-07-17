@@ -2,8 +2,11 @@
  2020-07-15
 
 For example please visit -> http://rtd.monster/godigit
+
 *This project is not responsive., 
+
 *If you open this site on mobile, 
+
 *You can change site mode to desktop version for see original version.
 
 
